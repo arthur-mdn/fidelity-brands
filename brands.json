@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "updatedAt": "2026-02-26",
   "brands": [
     {
@@ -47,6 +47,15 @@
       ]
     },
     {
+      "id": "boulanger",
+      "name": "Boulanger",
+      "colorHex": "#F15A22",
+      "logoStyle": "color",
+      "keywords": [
+        "boulanger"
+      ]
+    },
+    {
       "id": "brico_depot",
       "name": "Brico Dépôt",
       "colorHex": "#ffffff",
@@ -56,6 +65,17 @@
         "dépôt",
         "depot",
         "bricodepot"
+      ]
+    },
+    {
+      "id": "brioche_doree",
+      "name": "Brioche Dorée",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "brioche dorée",
+        "brioche",
+        "dorée"
       ]
     },
     {
@@ -82,12 +102,21 @@
       ]
     },
     {
+      "id": "but",
+      "name": "But",
+      "colorHex": "#ED1C24",
+      "logoStyle": "white",
+      "keywords": [
+        "but"
+      ]
+    },
+    {
       "id": "biocoop",
       "name": "Biocoop",
       "colorHex": "#0032A0",
       "logoStyle": "color",
       "keywords": [
-        "biocoop king",
+        "biocoop",
         "bio"
       ]
     },
@@ -132,6 +161,24 @@
       "logoStyle": "color",
       "keywords": [
         "celio"
+      ]
+    },
+    {
+      "id": "columbus",
+      "name": "Columbus",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "Columbus café"
+      ]
+    },
+    {
+      "id": "conforama",
+      "name": "Conforama",
+      "colorHex": "#FF4B2A",
+      "logoStyle": "color",
+      "keywords": [
+        "conforama"
       ]
     },
     {
@@ -413,13 +460,13 @@
       ]
     },
     {
-      "id": "monoprix",
-      "name": "Monoprix",
-      "colorHex": "#CC0000",
-      "logoStyle": "white",
+      "id": "mr_bricolage",
+      "name": "Mr Bricolage",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
       "keywords": [
-        "monoprix",
-        "mono"
+        "mr bricolage",
+        "mrbricolage"
       ]
     },
     {
@@ -463,6 +510,26 @@
       ]
     },
     {
+      "id": "otacos",
+      "name": "O'Tacos",
+      "colorHex": "#E6572C",
+      "logoStyle": "white",
+      "keywords": [
+        "otacos",
+        "o'tacos"
+      ]
+    },
+    {
+      "id": "paul",
+      "name": "Paul",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "paul",
+        "boulangerie"
+      ]
+    },
+    {
       "id": "picard",
       "name": "Picard",
       "colorHex": "#ffffff",
@@ -479,6 +546,27 @@
       "logoStyle": "white",
       "keywords": [
         "primark"
+      ]
+    },
+    {
+      "id": "quick",
+      "name": "Quick",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "quick"
+      ]
+    },
+    {
+      "id": "rituals",
+      "name": "Rituals",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "rituals",
+        "perfumerie",
+        "parfumerie",
+        "cosmétiques"
       ]
     },
     {
@@ -520,6 +608,15 @@
       ]
     },
     {
+      "id": "total_energies",
+      "name": "Total Energies",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "total energies"
+      ]
+    },
+    {
       "id": "truffaut",
       "name": "Truffaut",
       "colorHex": "#015851",
@@ -547,6 +644,15 @@
       "logoStyle": "white",
       "keywords": [
         "uniqlo"
+      ]
+    },
+    {
+      "id": "weldom",
+      "name": "Weldom",
+      "colorHex": "#F25C19",
+      "logoStyle": "white",
+      "keywords": [
+        "weldom"
       ]
     },
     {
