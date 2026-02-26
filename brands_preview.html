@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue des enseignes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f2f2f7;
+            color: #1c1c1e;
+            padding: 40px 24px;
+        }
+
+        header {
+            margin-bottom: 32px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #8e8e93;
+            margin-top: 4px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            border-radius: 12px;
+            padding: 10px 14px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .search input {
+            border: none;
+            outline: none;
+            font-size: 15px;
+            width: 100%;
+            background: transparent;
+            color: #1c1c1e;
+        }
+
+        .search svg { flex-shrink: 0; color: #8e8e93; }
+
+        .stats {
+            font-size: 13px;
+            color: #8e8e93;
+            margin-bottom: 16px;
+        }
+
+        .stats span { font-weight: 600; color: #1c1c1e; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            cursor: default;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+
+        .card-logo {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -1px;
+            position: relative;
+        }
+
+        .card-logo img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+        }
+
+        .card-logo .initials {
+            font-size: 26px;
+            font-weight: 800;
+            color: white;
+            opacity: 0.9;
+        }
+
+        .card-logo .logo-status {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.25);
+            color: white;
+        }
+
+        .card-info {
+            padding: 10px 12px 12px;
+            border-top: 1px solid #f2f2f7;
+        }
+
+        .card-name {
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .color-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .card-hex {
+            font-size: 11px;
+            color: #8e8e93;
+            font-family: "SF Mono", "Fira Code", monospace;
+        }
+
+        .card-id {
+            font-size: 10px;
+            color: #c7c7cc;
+            margin-top: 2px;
+            font-family: "SF Mono", "Fira Code", monospace;
+        }
+
+        .empty {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 0;
+            color: #8e8e93;
+        }
+
+        .empty svg { margin-bottom: 12px; opacity: 0.4; }
+        .empty p { font-size: 15px; font-weight: 500; }
+
+        .version-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #3a3a3c;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+        }
+
+        .version-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #34c759;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catalogue des enseignes</h1>
+    <p>Aperçu des couleurs et logos — placez ce fichier à côté de <code>brands.json</code></p>
+</header>
+
+<input type="file" id="file-input" accept=".json" style="display:none">
+<div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+    <div id="version-badge" class="version-badge" style="margin-bottom:0">
+        <span class="dot"></span>
+        <span id="version-text">v1.0.0 · 26 fév. 2026</span>
+    </div>
+    <button id="reload-btn" style="
+    background:white; border:none; border-radius:20px; padding:4px 12px;
+    font-size:12px; font-weight:600; color:#3a3a3c; cursor:pointer;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08); display:flex; align-items:center; gap:6px;
+  ">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/>
+        </svg>
+        Recharger brands.json
+    </button>
+</div>
+
+<div class="search">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="text" id="search" placeholder="Rechercher une enseigne…" autofocus>
+</div>
+
+<p class="stats"><span id="count">0</span> enseignes</p>
+
+<div class="grid" id="grid"></div>
+
+<script>
+    // Charge brands.json :
+    // - Via <input> si l'utilisateur charge le fichier manuellement
+    // - Via fetch si on est sur un serveur HTTP
+    // - Via données inline en dernier recours
+    async function loadBrands() {
+        if (window._loadedData) return window._loadedData;
+        try {
+            const res = await fetch(`brands.json?v=${Date.now()}`);
+            const data = await res.json();
+            return data;
+        } catch (e) {
+            return INLINE_DATA;
+        }
+    }
+
+    // Bouton reload : lit brands.json via FileReader (fonctionne en file://)
+    document.getElementById('reload-btn').addEventListener('click', () => {
+        document.getElementById('file-input').click();
+    });
+
+    document.getElementById('file-input').addEventListener('change', e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = ev => {
+            try {
+                const data = JSON.parse(ev.target.result);
+                window._loadedData = data;
+                allBrands = data.brands;
+                const d = new Date(data.updatedAt);
+                document.getElementById('version-text').textContent =
+                    `v${data.version} · ${d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+                document.getElementById('search').value = '';
+                render(allBrands);
+            } catch {
+                alert('Fichier JSON invalide');
+            }
+        };
+        reader.readAsText(file);
+        // Reset input pour permettre de recharger le même fichier
+        e.target.value = '';
+    });
+
+    function initials(name) {
+        return name.replace(/[^a-zA-ZÀ-ÿ0-9&]/g, '').substring(0, 2).toUpperCase();
+    }
+
+    function isLight(hex) {
+        const r = parseInt(hex.slice(1,3), 16);
+        const g = parseInt(hex.slice(3,5), 16);
+        const b = parseInt(hex.slice(5,7), 16);
+        return (r * 299 + g * 587 + b * 114) / 1000 > 160;
+    }
+
+    function renderCard(brand) {
+        const isColorLogo = brand.logoStyle === 'color';
+        const bg = brand.colorHex;
+        const light = isLight(bg);
+        const textColor = light ? 'rgba(0,0,0,0.7)' : 'white';
+        const imgFilter = isColorLogo ? 'none' : (light ? 'brightness(0)' : 'brightness(0) invert(1)');
+        const bust = Date.now();
+        const logoPath = `logos/${brand.id}.svg?v=${bust}`;
+
+        return `
+      <div class="card" data-name="${brand.name.toLowerCase()}" data-keywords="${brand.keywords.join(' ').toLowerCase()}">
+        <div class="card-logo" style="background:${bg}">
+          <img
+            src="${logoPath}"
+            alt="${brand.name}"
+            style="filter: ${imgFilter}; width:${isColorLogo ? '72px' : '48px'}; height:${isColorLogo ? '72px' : '48px'}"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+          >
+          <span class="initials" style="display:none; color:${textColor}">${initials(brand.name)}</span>
+          <span class="logo-status" id="status-${brand.id}"></span>
+        </div>
+        <div class="card-info">
+          <div class="card-name">${brand.name}</div>
+          <div class="card-meta">
+            <div class="color-dot" style="background:${brand.colorHex}"></div>
+            <span class="card-hex">${brand.colorHex}</span>
+          </div>
+          <div class="card-id">${brand.id}</div>
+        </div>
+      </div>
+    `;
+    }
+
+    function checkLogoExists(id) {
+        return new Promise(resolve => {
+            const img = new Image();
+            img.onload = () => resolve(true);
+            img.onerror = () => resolve(false);
+            img.src = `logos/${id}.svg?v=${Date.now()}`;
+        });
+    }
+
+    async function updateLogoStatuses(brands) {
+        for (const brand of brands) {
+            const exists = await checkLogoExists(brand.id);
+            const el = document.getElementById(`status-${brand.id}`);
+            if (el) {
+                el.textContent = exists ? '✓' : '–';
+                el.title = exists ? 'Logo disponible' : 'Logo manquant';
+            }
+        }
+    }
+
+    let allBrands = [];
+
+    function render(brands) {
+        const grid = document.getElementById('grid');
+        document.getElementById('count').textContent = brands.length;
+        if (brands.length === 0) {
+            grid.innerHTML = `
+        <div class="empty">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <p>Aucune enseigne trouvée</p>
+        </div>`;
+            return;
+        }
+        grid.innerHTML = brands.map(renderCard).join('');
+        updateLogoStatuses(brands);
+    }
+
+    document.getElementById('search').addEventListener('input', e => {
+        const q = e.target.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const filtered = allBrands.filter(b => {
+            const name = b.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            const kw = b.keywords.join(' ').toLowerCase();
+            return name.includes(q) || kw.includes(q);
+        });
+        render(filtered);
+    });
+
+    loadBrands().then(data => {
+        allBrands = data.brands;
+        const d = new Date(data.updatedAt);
+        document.getElementById('version-text').textContent =
+            `v${data.version} · ${d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+        render(allBrands);
+    });
+
+    // Données inline de fallback (ouverture sans serveur HTTP)
+    const INLINE_DATA = {"version": "1.0.0", "updatedAt": "2026-02-26", "brands": [{"id": "adidas", "name": "Adidas", "colorHex": "#000000", "logoStyle": "white", "keywords": ["adidas"]}, {"id": "aldi", "name": "Aldi", "colorHex": "#00539F", "logoStyle": "white", "keywords": ["aldi"]}, {"id": "amazon", "name": "Amazon", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["amazon"]}, {"id": "auchan", "name": "Auchan", "colorHex": "#E31A20", "logoStyle": "white", "keywords": ["auchan"]}, {"id": "brico_depot", "name": "Brico Dépôt", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["brico", "dépôt", "depot", "bricodepot"]}, {"id": "buffalo_grill", "name": "Buffalo Grill", "colorHex": "#E41523", "logoStyle": "white", "keywords": ["buffalo grill", "buffalo", "grill", "bufalo"]}, {"id": "burger_king", "name": "Burger King", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["burger king", "burgerking", "bk"]}, {"id": "carrefour", "name": "Carrefour", "colorHex": "#0158A6", "logoStyle": "white", "keywords": ["carrefour", "market", "city", "express", "bio"]}, {"id": "casino", "name": "Casino", "colorHex": "#016835", "logoStyle": "white", "keywords": ["casino", "géant", "geant"]}, {"id": "castorama", "name": "Castorama", "colorHex": "#0071B9", "logoStyle": "color", "keywords": ["castorama", "casto"]}, {"id": "courir", "name": "Courir", "colorHex": "#EB5803", "logoStyle": "white", "keywords": ["courir"]}, {"id": "cultura", "name": "Cultura", "colorHex": "#10416F", "logoStyle": "white", "keywords": ["cultura"]}, {"id": "darty", "name": "Darty", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["darty"]}, {"id": "decathlon", "name": "Décathlon", "colorHex": "#3643BB", "logoStyle": "white", "keywords": ["decathlon", "décathlon"]}, {"id": "dominos", "name": "Domino's", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["dominos", "domino"]}, {"id": "e_leclerc", "name": "E.Leclerc", "colorHex": "#0B70B5", "logoStyle": "color", "keywords": ["leclerc", "e.leclerc", "drive"]}, {"id": "fnac", "name": "Fnac", "colorHex": "#ECB300", "logoStyle": "white", "keywords": ["fnac", "darty"]}, {"id": "foot_locker", "name": "Foot Locker", "colorHex": "#000000", "logoStyle": "color", "keywords": ["foot locker", "footlocker"]}, {"id": "franprix", "name": "Franprix", "colorHex": "#F25920", "logoStyle": "white", "keywords": ["franprix"]}, {"id": "h_m", "name": "H&M", "colorHex": "#E50010", "logoStyle": "white", "keywords": ["hm", "h&m", "h and m"]}, {"id": "hema", "name": "HEMA", "colorHex": "#E41216", "logoStyle": "white", "keywords": ["hema"]}, {"id": "ikea", "name": "IKEA", "colorHex": "#0058A3", "logoStyle": "color", "keywords": ["ikea"]}, {"id": "intermarche", "name": "Intermarché", "colorHex": "#E3000F", "logoStyle": "white", "keywords": ["intermarché", "intermarche", "super", "hyper"]}, {"id": "intersport", "name": "Intersport", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["intersport"]}, {"id": "jardiland", "name": "Jardiland", "colorHex": "#D14901", "logoStyle": "white", "keywords": ["jardiland"]}, {"id": "jules", "name": "Jules", "colorHex": "#016451", "logoStyle": "white", "keywords": ["jules"]}, {"id": "kfc", "name": "KFC", "colorHex": "#E8192C", "logoStyle": "color", "keywords": ["kfc", "kentucky"]}, {"id": "kiabi", "name": "Kiabi", "colorHex": "#06013B", "logoStyle": "color", "keywords": ["kiabi"]}, {"id": "lacoste", "name": "Lacoste", "colorHex": "#306944", "logoStyle": "white", "keywords": ["lacoste"]}, {"id": "leroy_merlin", "name": "Leroy Merlin", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["leroy", "merlin", "leroymerlin"]}, {"id": "lidl", "name": "Lidl", "colorHex": "#0050AA", "logoStyle": "color", "keywords": ["lidl"]}, {"id": "maisons_du_monde", "name": "Maisons du Monde", "colorHex": "#1A1A1A", "logoStyle": "color", "keywords": ["maisons du monde", "mdm"]}, {"id": "marionnaud", "name": "Marionnaud", "colorHex": "#C8006B", "logoStyle": "white", "keywords": ["marionnaud"]}, {"id": "mcdonalds", "name": "McDonald's", "colorHex": "#0C4A1B", "logoStyle": "color", "keywords": ["mcdonalds", "mcdonald", "mac do", "macdo"]}, {"id": "monoprix", "name": "Monoprix", "colorHex": "#CC0000", "logoStyle": "white", "keywords": ["monoprix", "mono"]}, {"id": "nature_decouvertes", "name": "Nature & Découvertes", "colorHex": "#C6462E", "logoStyle": "white", "keywords": ["nature découvertes", "nature et découvertes"]}, {"id": "nike", "name": "Nike", "colorHex": "#000000", "logoStyle": "white", "keywords": ["nike"]}, {"id": "nocibe", "name": "Nocibé", "colorHex": "#E51753", "logoStyle": "white", "keywords": ["nocibe", "nocibé"]}, {"id": "picard", "name": "Picard", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["picard", "surgelés"]}, {"id": "primark", "name": "Primark", "colorHex": "#079CCE", "logoStyle": "white", "keywords": ["primark"]}, {"id": "sephora", "name": "Séphora", "colorHex": "#000000", "logoStyle": "white", "keywords": ["sephora", "séphora"]}, {"id": "sport_2000", "name": "Sport 2000", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["sport 2000", "sport2000"]}, {"id": "starbucks", "name": "Starbucks", "colorHex": "#00704A", "logoStyle": "color", "keywords": ["starbucks"]}, {"id": "subway", "name": "Subway", "colorHex": "#009B48", "logoStyle": "white", "keywords": ["subway"]}, {"id": "truffaut", "name": "Truffaut", "colorHex": "#015851", "logoStyle": "white", "keywords": ["truffaut"]}, {"id": "uniqlo", "name": "Uniqlo", "colorHex": "#ED1D24", "logoStyle": "white", "keywords": ["uniqlo"]}, {"id": "yves_rocher", "name": "Yves Rocher", "colorHex": "#89993E", "logoStyle": "white", "keywords": ["yves rocher", "yvesrocher"]}, {"id": "zara", "name": "Zara", "colorHex": "#000000", "logoStyle": "white", "keywords": ["zara"]}]};
+</script>
+</body>
+</html>
