@@ -82,6 +82,16 @@
       ]
     },
     {
+      "id": "biocoop",
+      "name": "Biocoop",
+      "colorHex": "#0032A0",
+      "logoStyle": "color",
+      "keywords": [
+        "biocoop king",
+        "bio"
+      ]
+    },
+    {
       "id": "carrefour",
       "name": "Carrefour",
       "colorHex": "#0158A6",
