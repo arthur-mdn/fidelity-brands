@@ -373,7 +373,496 @@
     });
 
     // Données inline de fallback (ouverture sans serveur HTTP)
-    const INLINE_DATA = {"version": "1.0.0", "updatedAt": "2026-02-26", "brands": [{"id": "adidas", "name": "Adidas", "colorHex": "#000000", "logoStyle": "white", "keywords": ["adidas"]}, {"id": "aldi", "name": "Aldi", "colorHex": "#00539F", "logoStyle": "white", "keywords": ["aldi"]}, {"id": "amazon", "name": "Amazon", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["amazon"]}, {"id": "auchan", "name": "Auchan", "colorHex": "#E31A20", "logoStyle": "white", "keywords": ["auchan"]}, {"id": "brico_depot", "name": "Brico Dépôt", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["brico", "dépôt", "depot", "bricodepot"]}, {"id": "buffalo_grill", "name": "Buffalo Grill", "colorHex": "#E41523", "logoStyle": "white", "keywords": ["buffalo grill", "buffalo", "grill", "bufalo"]}, {"id": "burger_king", "name": "Burger King", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["burger king", "burgerking", "bk"]}, {"id": "carrefour", "name": "Carrefour", "colorHex": "#0158A6", "logoStyle": "white", "keywords": ["carrefour", "market", "city", "express", "bio"]}, {"id": "casino", "name": "Casino", "colorHex": "#016835", "logoStyle": "white", "keywords": ["casino", "géant", "geant"]}, {"id": "castorama", "name": "Castorama", "colorHex": "#0071B9", "logoStyle": "color", "keywords": ["castorama", "casto"]}, {"id": "courir", "name": "Courir", "colorHex": "#EB5803", "logoStyle": "white", "keywords": ["courir"]}, {"id": "cultura", "name": "Cultura", "colorHex": "#10416F", "logoStyle": "white", "keywords": ["cultura"]}, {"id": "darty", "name": "Darty", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["darty"]}, {"id": "decathlon", "name": "Décathlon", "colorHex": "#3643BB", "logoStyle": "white", "keywords": ["decathlon", "décathlon"]}, {"id": "dominos", "name": "Domino's", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["dominos", "domino"]}, {"id": "e_leclerc", "name": "E.Leclerc", "colorHex": "#0B70B5", "logoStyle": "color", "keywords": ["leclerc", "e.leclerc", "drive"]}, {"id": "fnac", "name": "Fnac", "colorHex": "#ECB300", "logoStyle": "white", "keywords": ["fnac", "darty"]}, {"id": "foot_locker", "name": "Foot Locker", "colorHex": "#000000", "logoStyle": "color", "keywords": ["foot locker", "footlocker"]}, {"id": "franprix", "name": "Franprix", "colorHex": "#F25920", "logoStyle": "white", "keywords": ["franprix"]}, {"id": "h_m", "name": "H&M", "colorHex": "#E50010", "logoStyle": "white", "keywords": ["hm", "h&m", "h and m"]}, {"id": "hema", "name": "HEMA", "colorHex": "#E41216", "logoStyle": "white", "keywords": ["hema"]}, {"id": "ikea", "name": "IKEA", "colorHex": "#0058A3", "logoStyle": "color", "keywords": ["ikea"]}, {"id": "intermarche", "name": "Intermarché", "colorHex": "#E3000F", "logoStyle": "white", "keywords": ["intermarché", "intermarche", "super", "hyper"]}, {"id": "intersport", "name": "Intersport", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["intersport"]}, {"id": "jardiland", "name": "Jardiland", "colorHex": "#D14901", "logoStyle": "white", "keywords": ["jardiland"]}, {"id": "jules", "name": "Jules", "colorHex": "#016451", "logoStyle": "white", "keywords": ["jules"]}, {"id": "kfc", "name": "KFC", "colorHex": "#E8192C", "logoStyle": "color", "keywords": ["kfc", "kentucky"]}, {"id": "kiabi", "name": "Kiabi", "colorHex": "#06013B", "logoStyle": "color", "keywords": ["kiabi"]}, {"id": "lacoste", "name": "Lacoste", "colorHex": "#306944", "logoStyle": "white", "keywords": ["lacoste"]}, {"id": "leroy_merlin", "name": "Leroy Merlin", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["leroy", "merlin", "leroymerlin"]}, {"id": "lidl", "name": "Lidl", "colorHex": "#0050AA", "logoStyle": "color", "keywords": ["lidl"]}, {"id": "maisons_du_monde", "name": "Maisons du Monde", "colorHex": "#1A1A1A", "logoStyle": "color", "keywords": ["maisons du monde", "mdm"]}, {"id": "marionnaud", "name": "Marionnaud", "colorHex": "#C8006B", "logoStyle": "white", "keywords": ["marionnaud"]}, {"id": "mcdonalds", "name": "McDonald's", "colorHex": "#0C4A1B", "logoStyle": "color", "keywords": ["mcdonalds", "mcdonald", "mac do", "macdo"]}, {"id": "monoprix", "name": "Monoprix", "colorHex": "#CC0000", "logoStyle": "white", "keywords": ["monoprix", "mono"]}, {"id": "nature_decouvertes", "name": "Nature & Découvertes", "colorHex": "#C6462E", "logoStyle": "white", "keywords": ["nature découvertes", "nature et découvertes"]}, {"id": "nike", "name": "Nike", "colorHex": "#000000", "logoStyle": "white", "keywords": ["nike"]}, {"id": "nocibe", "name": "Nocibé", "colorHex": "#E51753", "logoStyle": "white", "keywords": ["nocibe", "nocibé"]}, {"id": "picard", "name": "Picard", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["picard", "surgelés"]}, {"id": "primark", "name": "Primark", "colorHex": "#079CCE", "logoStyle": "white", "keywords": ["primark"]}, {"id": "sephora", "name": "Séphora", "colorHex": "#000000", "logoStyle": "white", "keywords": ["sephora", "séphora"]}, {"id": "sport_2000", "name": "Sport 2000", "colorHex": "#ffffff", "logoStyle": "color", "keywords": ["sport 2000", "sport2000"]}, {"id": "starbucks", "name": "Starbucks", "colorHex": "#00704A", "logoStyle": "color", "keywords": ["starbucks"]}, {"id": "subway", "name": "Subway", "colorHex": "#009B48", "logoStyle": "white", "keywords": ["subway"]}, {"id": "truffaut", "name": "Truffaut", "colorHex": "#015851", "logoStyle": "white", "keywords": ["truffaut"]}, {"id": "uniqlo", "name": "Uniqlo", "colorHex": "#ED1D24", "logoStyle": "white", "keywords": ["uniqlo"]}, {"id": "yves_rocher", "name": "Yves Rocher", "colorHex": "#89993E", "logoStyle": "white", "keywords": ["yves rocher", "yvesrocher"]}, {"id": "zara", "name": "Zara", "colorHex": "#000000", "logoStyle": "white", "keywords": ["zara"]}]};
+    const INLINE_DATA = {
+        "version": "1.0.0",
+        "updatedAt": "2026-02-26",
+        "brands": [
+            {
+                "id": "adidas",
+                "name": "Adidas",
+                "colorHex": "#000000",
+                "logoStyle": "white",
+                "keywords": [
+                    "adidas"
+                ]
+            },
+            {
+                "id": "aldi",
+                "name": "Aldi",
+                "colorHex": "#00539F",
+                "logoStyle": "white",
+                "keywords": [
+                    "aldi"
+                ]
+            },
+            {
+                "id": "amazon",
+                "name": "Amazon",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "amazon"
+                ]
+            },
+            {
+                "id": "auchan",
+                "name": "Auchan",
+                "colorHex": "#E31A20",
+                "logoStyle": "white",
+                "keywords": [
+                    "auchan"
+                ]
+            },
+            {
+                "id": "brico_depot",
+                "name": "Brico Dépôt",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "brico",
+                    "dépôt",
+                    "depot",
+                    "bricodepot"
+                ]
+            },
+            {
+                "id": "buffalo_grill",
+                "name": "Buffalo Grill",
+                "colorHex": "#E41523",
+                "logoStyle": "white",
+                "keywords": [
+                    "buffalo grill",
+                    "buffalo",
+                    "grill",
+                    "bufalo"
+                ]
+            },
+            {
+                "id": "burger_king",
+                "name": "Burger King",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "burger king",
+                    "burgerking",
+                    "bk"
+                ]
+            },
+            {
+                "id": "carrefour",
+                "name": "Carrefour",
+                "colorHex": "#0158A6",
+                "logoStyle": "white",
+                "keywords": [
+                    "carrefour",
+                    "market",
+                    "city",
+                    "express",
+                    "bio"
+                ]
+            },
+            {
+                "id": "casino",
+                "name": "Casino",
+                "colorHex": "#016835",
+                "logoStyle": "white",
+                "keywords": [
+                    "casino",
+                    "géant",
+                    "geant"
+                ]
+            },
+            {
+                "id": "castorama",
+                "name": "Castorama",
+                "colorHex": "#0071B9",
+                "logoStyle": "color",
+                "keywords": [
+                    "castorama",
+                    "casto"
+                ]
+            },
+            {
+                "id": "courir",
+                "name": "Courir",
+                "colorHex": "#EB5803",
+                "logoStyle": "white",
+                "keywords": [
+                    "courir"
+                ]
+            },
+            {
+                "id": "cultura",
+                "name": "Cultura",
+                "colorHex": "#10416F",
+                "logoStyle": "white",
+                "keywords": [
+                    "cultura"
+                ]
+            },
+            {
+                "id": "darty",
+                "name": "Darty",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "darty"
+                ]
+            },
+            {
+                "id": "decathlon",
+                "name": "Décathlon",
+                "colorHex": "#3643BB",
+                "logoStyle": "white",
+                "keywords": [
+                    "decathlon",
+                    "décathlon"
+                ]
+            },
+            {
+                "id": "dominos",
+                "name": "Domino's",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "dominos",
+                    "domino"
+                ]
+            },
+            {
+                "id": "e_leclerc",
+                "name": "E.Leclerc",
+                "colorHex": "#0B70B5",
+                "logoStyle": "color",
+                "keywords": [
+                    "leclerc",
+                    "e.leclerc",
+                    "drive"
+                ]
+            },
+            {
+                "id": "fnac",
+                "name": "Fnac",
+                "colorHex": "#ECB300",
+                "logoStyle": "white",
+                "keywords": [
+                    "fnac",
+                    "darty"
+                ]
+            },
+            {
+                "id": "foot_locker",
+                "name": "Foot Locker",
+                "colorHex": "#000000",
+                "logoStyle": "color",
+                "keywords": [
+                    "foot locker",
+                    "footlocker"
+                ]
+            },
+            {
+                "id": "franprix",
+                "name": "Franprix",
+                "colorHex": "#F25920",
+                "logoStyle": "white",
+                "keywords": [
+                    "franprix"
+                ]
+            },
+            {
+                "id": "h_m",
+                "name": "H&M",
+                "colorHex": "#E50010",
+                "logoStyle": "white",
+                "keywords": [
+                    "hm",
+                    "h&m",
+                    "h and m"
+                ]
+            },
+            {
+                "id": "hema",
+                "name": "HEMA",
+                "colorHex": "#E41216",
+                "logoStyle": "white",
+                "keywords": [
+                    "hema"
+                ]
+            },
+            {
+                "id": "ikea",
+                "name": "IKEA",
+                "colorHex": "#0058A3",
+                "logoStyle": "color",
+                "keywords": [
+                    "ikea"
+                ]
+            },
+            {
+                "id": "intermarche",
+                "name": "Intermarché",
+                "colorHex": "#E3000F",
+                "logoStyle": "white",
+                "keywords": [
+                    "intermarché",
+                    "intermarche",
+                    "super",
+                    "hyper"
+                ]
+            },
+            {
+                "id": "intersport",
+                "name": "Intersport",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "intersport"
+                ]
+            },
+            {
+                "id": "jardiland",
+                "name": "Jardiland",
+                "colorHex": "#D14901",
+                "logoStyle": "white",
+                "keywords": [
+                    "jardiland"
+                ]
+            },
+            {
+                "id": "jules",
+                "name": "Jules",
+                "colorHex": "#016451",
+                "logoStyle": "white",
+                "keywords": [
+                    "jules"
+                ]
+            },
+            {
+                "id": "kfc",
+                "name": "KFC",
+                "colorHex": "#E8192C",
+                "logoStyle": "color",
+                "keywords": [
+                    "kfc",
+                    "kentucky"
+                ]
+            },
+            {
+                "id": "kiabi",
+                "name": "Kiabi",
+                "colorHex": "#06013B",
+                "logoStyle": "color",
+                "keywords": [
+                    "kiabi"
+                ]
+            },
+            {
+                "id": "lacoste",
+                "name": "Lacoste",
+                "colorHex": "#306944",
+                "logoStyle": "white",
+                "keywords": [
+                    "lacoste"
+                ]
+            },
+            {
+                "id": "leroy_merlin",
+                "name": "Leroy Merlin",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "leroy",
+                    "merlin",
+                    "leroymerlin"
+                ]
+            },
+            {
+                "id": "lidl",
+                "name": "Lidl",
+                "colorHex": "#0050AA",
+                "logoStyle": "color",
+                "keywords": [
+                    "lidl"
+                ]
+            },
+            {
+                "id": "maisons_du_monde",
+                "name": "Maisons du Monde",
+                "colorHex": "#1A1A1A",
+                "logoStyle": "color",
+                "keywords": [
+                    "maisons du monde",
+                    "mdm"
+                ]
+            },
+            {
+                "id": "marionnaud",
+                "name": "Marionnaud",
+                "colorHex": "#C8006B",
+                "logoStyle": "white",
+                "keywords": [
+                    "marionnaud"
+                ]
+            },
+            {
+                "id": "mcdonalds",
+                "name": "McDonald's",
+                "colorHex": "#0C4A1B",
+                "logoStyle": "color",
+                "keywords": [
+                    "mcdonalds",
+                    "mcdonald",
+                    "mac do",
+                    "macdo"
+                ]
+            },
+            {
+                "id": "monoprix",
+                "name": "Monoprix",
+                "colorHex": "#CC0000",
+                "logoStyle": "white",
+                "keywords": [
+                    "monoprix",
+                    "mono"
+                ]
+            },
+            {
+                "id": "nature_decouvertes",
+                "name": "Nature & Découvertes",
+                "colorHex": "#C6462E",
+                "logoStyle": "white",
+                "keywords": [
+                    "nature découvertes",
+                    "nature et découvertes"
+                ]
+            },
+            {
+                "id": "nike",
+                "name": "Nike",
+                "colorHex": "#000000",
+                "logoStyle": "white",
+                "keywords": [
+                    "nike"
+                ]
+            },
+            {
+                "id": "nocibe",
+                "name": "Nocibé",
+                "colorHex": "#E51753",
+                "logoStyle": "white",
+                "keywords": [
+                    "nocibe",
+                    "nocibé"
+                ]
+            },
+            {
+                "id": "picard",
+                "name": "Picard",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "picard",
+                    "surgelés"
+                ]
+            },
+            {
+                "id": "primark",
+                "name": "Primark",
+                "colorHex": "#079CCE",
+                "logoStyle": "white",
+                "keywords": [
+                    "primark"
+                ]
+            },
+            {
+                "id": "sephora",
+                "name": "Séphora",
+                "colorHex": "#000000",
+                "logoStyle": "white",
+                "keywords": [
+                    "sephora",
+                    "séphora"
+                ]
+            },
+            {
+                "id": "sport_2000",
+                "name": "Sport 2000",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "sport 2000",
+                    "sport2000"
+                ]
+            },
+            {
+                "id": "starbucks",
+                "name": "Starbucks",
+                "colorHex": "#00704A",
+                "logoStyle": "color",
+                "keywords": [
+                    "starbucks"
+                ]
+            },
+            {
+                "id": "subway",
+                "name": "Subway",
+                "colorHex": "#009B48",
+                "logoStyle": "white",
+                "keywords": [
+                    "subway"
+                ]
+            },
+            {
+                "id": "truffaut",
+                "name": "Truffaut",
+                "colorHex": "#015851",
+                "logoStyle": "white",
+                "keywords": [
+                    "truffaut"
+                ]
+            },
+            {
+                "id": "u",
+                "name": "U",
+                "colorHex": "#ffffff",
+                "logoStyle": "color",
+                "keywords": [
+                    "u",
+                    "super u",
+                    "hyper u",
+                    "u express"
+                ]
+            },
+            {
+                "id": "uniqlo",
+                "name": "Uniqlo",
+                "colorHex": "#ED1D24",
+                "logoStyle": "white",
+                "keywords": [
+                    "uniqlo"
+                ]
+            },
+            {
+                "id": "yves_rocher",
+                "name": "Yves Rocher",
+                "colorHex": "#89993E",
+                "logoStyle": "white",
+                "keywords": [
+                    "yves rocher",
+                    "yvesrocher"
+                ]
+            },
+            {
+                "id": "zara",
+                "name": "Zara",
+                "colorHex": "#000000",
+                "logoStyle": "white",
+                "keywords": [
+                    "zara"
+                ]
+            }
+        ]
+    };
 </script>
 </body>
 </html>

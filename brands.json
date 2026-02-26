@@ -447,6 +447,18 @@
       ]
     },
     {
+      "id": "u",
+      "name": "U",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "u",
+        "super u",
+        "hyper u",
+        "u express"
+      ]
+    },
+    {
       "id": "uniqlo",
       "name": "Uniqlo",
       "colorHex": "#ED1D24",
