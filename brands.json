@@ -3,6 +3,14 @@
   "updatedAt": "2026-02-26",
   "brands": [
     {
+      "id": "action",
+      "name": "Action",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "action"
+      ]
+    },{
       "id": "adidas",
       "name": "Adidas",
       "colorHex": "#000000",
