@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "updatedAt": "2026-02-26",
   "brands": [
     {
@@ -295,7 +295,8 @@
       "keywords": [
         "gifi",
         "des idées de génie"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "grand_frais",
@@ -307,7 +308,8 @@
         "grandfrais",
         "frais",
         "grand"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "h_m",
