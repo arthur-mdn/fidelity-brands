@@ -1,5 +1,5 @@
 {
-  "version": "1.0.8",
+  "version": "1.0.9",
   "updatedAt": "2026-03-09",
   "brands": [
     {
@@ -289,6 +289,15 @@
       ]
     },
     {
+      "id": "etam",
+      "name": "Etam",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "etam"
+      ]
+    },
+    {
       "id": "flunch",
       "name": "flunch",
       "colorHex": "#DF2112",
@@ -542,6 +551,15 @@
       ]
     },
     {
+      "id": "micromania",
+      "name": "Micromania",
+      "colorHex": "#164194",
+      "logoStyle": "white",
+      "keywords": [
+        "micromania"
+      ]
+    },
+    {
       "id": "monoprix",
       "name": "Monoprix",
       "colorHex": "#ffffff",
@@ -631,6 +649,16 @@
       ]
     },
     {
+      "id": "pathe",
+      "name": "Pathé",
+      "colorHex": "#FFC426",
+      "logoStyle": "color",
+      "keywords": [
+        "pathé",
+        "cinéma"
+      ]
+    },
+    {
       "id": "paul",
       "name": "Paul",
       "colorHex": "#ffffff",
@@ -697,6 +725,15 @@
       "keywords": [
         "sephora",
         "séphora"
+      ]
+    },
+    {
+      "id": "shell",
+      "name": "Shell",
+      "colorHex": "#1D232B",
+      "logoStyle": "color",
+      "keywords": [
+        "shell"
       ]
     },
     {
@@ -774,6 +811,15 @@
         "super u",
         "hyper u",
         "u express"
+      ]
+    },
+    {
+      "id": "undiz",
+      "name": "Undiz",
+      "colorHex": "#ffffff",
+      "logoStyle": "white",
+      "keywords": [
+        "undiz"
       ]
     },
     {
