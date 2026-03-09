@@ -1,5 +1,5 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.8",
   "updatedAt": "2026-03-09",
   "brands": [
     {
@@ -608,7 +608,8 @@
       "keywords": [
         "nocibe",
         "nocibé"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "normal",
@@ -742,7 +743,8 @@
       "logoStyle": "white",
       "keywords": [
         "subway"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "total_energies",
