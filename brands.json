@@ -1,5 +1,5 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.10",
   "updatedAt": "2026-03-09",
   "brands": [
     {
@@ -38,6 +38,16 @@
       ]
     },
     {
+      "id": "animalis",
+      "name": "Animalis",
+      "colorHex": "#E30A11",
+      "logoStyle": "white",
+      "keywords": [
+        "animalis",
+        "animalerie"
+      ]
+    },
+    {
       "id": "auchan",
       "name": "Auchan",
       "colorHex": "#E31A20",
@@ -63,6 +73,17 @@
       "logoStyle": "white",
       "keywords": [
         "bershka"
+      ]
+    },
+    {
+      "id": "bio_c_bon",
+      "name": "Bio c' Bon",
+      "colorHex": "#006232",
+      "logoStyle": "color",
+      "keywords": [
+        "bio c' bon",
+        "bio c bon",
+        "bio cbon"
       ]
     },
     {
@@ -346,6 +367,16 @@
       ]
     },
     {
+      "id": "generale_d_optique",
+      "name": "Générale d'Optique",
+      "colorHex": "#004D42",
+      "logoStyle": "color",
+      "keywords": [
+        "générale d'optique",
+        "générale optique"
+      ]
+    },
+    {
       "id": "gifi",
       "name": "Gifi",
       "colorHex": "#ffffff",
@@ -368,6 +399,16 @@
         "grand"
       ],
       "logoVersion": "2"
+    },
+    {
+      "id": "grand_optical",
+      "name": "Grand Optical",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "grand optical",
+        "optique"
+      ]
     },
     {
       "id": "h_m",
@@ -482,6 +523,16 @@
       ]
     },
     {
+      "id": "la_vie_claire",
+      "name": "La Vie Claire",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "la vie claire",
+        "lavieclaire"
+      ]
+    },
+    {
       "id": "lacoste",
       "name": "Lacoste",
       "colorHex": "#306944",
@@ -536,6 +587,19 @@
       "logoStyle": "white",
       "keywords": [
         "marionnaud"
+      ]
+    },
+    {
+      "id": "maxi_zoo",
+      "name": "Maxi Zoo",
+      "colorHex": "#1B6429",
+      "logoStyle": "color",
+      "keywords": [
+        "maxi zoo",
+        "maxizoo",
+        "maxi",
+        "zoo",
+        "animalerie"
       ]
     },
     {
@@ -639,6 +703,17 @@
       ]
     },
     {
+      "id": "optical_center",
+      "name": "Optical Center",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "optical center",
+        "opticalcenter",
+        "optique"
+      ]
+    },
+    {
       "id": "otacos",
       "name": "O'Tacos",
       "colorHex": "#E6572C",
@@ -737,6 +812,16 @@
       ]
     },
     {
+      "id": "so_bio",
+      "name": "So Bio",
+      "colorHex": "#007646",
+      "logoStyle": "color",
+      "keywords": [
+        "so bio",
+        "sobio"
+      ]
+    },
+    {
       "id": "spar",
       "name": "Spar",
       "colorHex": "#ffffff",
@@ -811,6 +896,16 @@
         "super u",
         "hyper u",
         "u express"
+      ]
+    },
+    {
+      "id": "ugc",
+      "name": "UGC",
+      "colorHex": "#010546",
+      "logoStyle": "color",
+      "keywords": [
+        "ugc",
+        "cinéma"
       ]
     },
     {
