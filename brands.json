@@ -1,5 +1,5 @@
 {
-  "version": "1.0.11",
+  "version": "1.0.12",
   "updatedAt": "2026-03-09",
   "brands": [
     {
@@ -10,13 +10,23 @@
       "keywords": [
         "action"
       ]
-    },{
+    },
+    {
       "id": "adidas",
       "name": "Adidas",
       "colorHex": "#000000",
       "logoStyle": "white",
       "keywords": [
         "adidas"
+      ]
+    },
+    {
+      "id": "adopt",
+      "name": "Adopt",
+      "colorHex": "#F4ADBB",
+      "logoStyle": "color",
+      "keywords": [
+        "adopt"
       ]
     },
     {
@@ -87,6 +97,15 @@
       ]
     },
     {
+      "id": "blue_box",
+      "name": "Blue Box",
+      "colorHex": "#032857",
+      "logoStyle": "white",
+      "keywords": [
+        "blue box"
+      ]
+    },
+    {
       "id": "boulanger",
       "name": "Boulanger",
       "colorHex": "#F15A22",
@@ -117,6 +136,16 @@
         "marché",
         "marche",
         "bricomarche"
+      ]
+    },
+    {
+      "id": "bricorama",
+      "name": "Bricorama",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "bricolage",
+        "rama"
       ]
     },
     {
