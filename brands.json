@@ -1,5 +1,5 @@
 {
-  "version": "1.0.16",
+  "version": "1.0.17",
   "updatedAt": "2026-03-15",
   "brands": [
     {
@@ -64,6 +64,16 @@
       "keywords": [
         "animalis",
         "animalerie"
+      ]
+    },
+    {
+      "id": "apothical",
+      "name": "Apothical",
+      "colorHex": "#0B3322",
+      "logoStyle": "color",
+      "keywords": [
+        "apothical",
+        "pharmacie"
       ]
     },
     {
@@ -761,6 +771,17 @@
       ]
     },
     {
+      "id": "krys",
+      "name": "Krys",
+      "colorHex": "#1B64D7",
+      "logoStyle": "white",
+      "keywords": [
+        "krys",
+        "optique",
+        "audition"
+      ]
+    },
+    {
       "id": "la_boutique_du_coiffeur",
       "name": "La Boutique du Coiffeur",
       "colorHex": "#52264F",
@@ -879,6 +900,16 @@
       "logoStyle": "white",
       "keywords": [
         "marionnaud"
+      ]
+    },
+    {
+      "id": "match",
+      "name": "Match",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "match",
+        "supermarché"
       ]
     },
     {
@@ -1013,6 +1044,16 @@
       "keywords": [
         "otacos",
         "o'tacos"
+      ]
+    },
+    {
+      "id": "parashop",
+      "name": "Parashop",
+      "colorHex": "#4A7A6C",
+      "logoStyle": "white",
+      "keywords": [
+        "parashop",
+        "parapharmacie"
       ]
     },
     {
@@ -1158,6 +1199,16 @@
       "logoStyle": "color",
       "keywords": [
         "shell"
+      ]
+    },
+    {
+      "id": "smyths",
+      "name": "Smyths",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "smyths",
+        "toys r us"
       ]
     },
     {
