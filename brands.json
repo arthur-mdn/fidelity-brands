@@ -1,5 +1,5 @@
 {
-  "version": "1.0.19",
+  "version": "1.0.20",
   "updatedAt": "2026-03-15",
   "brands": [
     {
@@ -74,6 +74,24 @@
       "keywords": [
         "animalis",
         "animalerie"
+      ]
+    },
+    {
+      "id": "au_bureau",
+      "name": "Au Bureau",
+      "colorHex": "#5D717A",
+      "logoStyle": "white",
+      "keywords": [
+        "au bureau"
+      ]
+    },
+    {
+      "id": "au_vieux_campeur",
+      "name": "Au Vieux Campeur",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "au vieux campeur"
       ]
     },
     {
@@ -303,6 +321,15 @@
       ]
     },
     {
+      "id": "carrement_fleurs",
+      "name": "Carrément Fleurs",
+      "colorHex": "#33150C",
+      "logoStyle": "color",
+      "keywords": [
+        "carrément fleurs"
+      ]
+    },
+    {
       "id": "carrefour",
       "name": "Carrefour",
       "colorHex": "#0158A6",
@@ -332,6 +359,26 @@
       "logoStyle": "white",
       "keywords": [
         "casa"
+      ]
+    },
+    {
+      "id": "cash_converters",
+      "name": "Cash Converters",
+      "colorHex": "#F0B312",
+      "logoStyle": "color",
+      "keywords": [
+        "cash converters",
+        "cashconverter"
+      ]
+    },
+    {
+      "id": "cash_express",
+      "name": "Cash Express",
+      "colorHex": "#000",
+      "logoStyle": "color",
+      "keywords": [
+        "cash express",
+        "cashexpress"
       ]
     },
     {
@@ -381,6 +428,16 @@
       "logoStyle": "color",
       "keywords": [
         "centrakor"
+      ]
+    },
+    {
+      "id": "cinq_a_sec",
+      "name": "5 à sec",
+      "colorHex": "#330E42",
+      "logoStyle": "color",
+      "keywords": [
+        "5 à sec",
+        "cinq à sec"
       ]
     },
     {
@@ -476,6 +533,15 @@
         "leclerc",
         "e.leclerc",
         "drive"
+      ]
+    },
+    {
+      "id": "easycash",
+      "name": "EasyCash",
+      "colorHex": "#FF002D",
+      "logoStyle": "white",
+      "keywords": [
+        "easy cash"
       ]
     },
     {
@@ -743,6 +809,16 @@
       ]
     },
     {
+      "id": "joa",
+      "name": "JOA",
+      "colorHex": "#772583",
+      "logoStyle": "white",
+      "keywords": [
+        "joa",
+        "casino"
+      ]
+    },
+    {
       "id": "joueclub",
       "name": "JouéClub",
       "colorHex": "#ffffff",
@@ -879,6 +955,15 @@
       "logoStyle": "white",
       "keywords": [
         "lacoste"
+      ]
+    },
+    {
+      "id": "le_comptoir_de_mathilde",
+      "name": "Le Comptoir de Mathilde",
+      "colorHex": "#452E1C",
+      "logoStyle": "white",
+      "keywords": [
+        "le comptoir de mathilde"
       ]
     },
     {
@@ -1107,6 +1192,34 @@
       ]
     },
     {
+      "id": "oxbow",
+      "name": "Oxbow",
+      "colorHex": "#7A4E90",
+      "logoStyle": "color",
+      "keywords": [
+        "oxbow"
+      ]
+    },
+    {
+      "id": "palais_des_thes",
+      "name": "Palais des Thés",
+      "colorHex": "#546A2A",
+      "logoStyle": "white",
+      "keywords": [
+        "palais des thés"
+      ]
+    },
+    {
+      "id": "pandora",
+      "name": "Pandora",
+      "colorHex": "#000000",
+      "logoStyle": "white",
+      "keywords": [
+        "pandora",
+        "bijoux"
+      ]
+    },
+    {
       "id": "parashop",
       "name": "Parashop",
       "colorHex": "#4A7A6C",
@@ -1229,6 +1342,15 @@
       "logoStyle": "color",
       "keywords": [
         "quick"
+      ]
+    },
+    {
+      "id": "quiksilver",
+      "name": "Quiksilver",
+      "colorHex": "#303030",
+      "logoStyle": "white",
+      "keywords": [
+        "quiksilver"
       ]
     },
     {
@@ -1390,6 +1512,15 @@
       "logoStyle": "white",
       "keywords": [
         "the north face"
+      ]
+    },
+    {
+      "id": "top_office",
+      "name": "Top Office",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "top office"
       ]
     },
     {
