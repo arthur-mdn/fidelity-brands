@@ -1,5 +1,5 @@
 {
-  "version": "1.0.18",
+  "version": "1.0.19",
   "updatedAt": "2026-03-15",
   "brands": [
     {
@@ -54,6 +54,16 @@
       "logoStyle": "color",
       "keywords": [
         "amazon"
+      ]
+    },
+    {
+      "id": "ange",
+      "name": "ange",
+      "colorHex": "#000000",
+      "logoStyle": "color",
+      "keywords": [
+        "ange",
+        "boulangerie"
       ]
     },
     {
@@ -306,6 +316,16 @@
       ]
     },
     {
+      "id": "carrefour_bio",
+      "name": "Carrefour Bio",
+      "colorHex": "#016934",
+      "logoStyle": "white",
+      "keywords": [
+        "carrefour",
+        "bio"
+      ]
+    },
+    {
       "id": "casa",
       "name": "casa",
       "colorHex": "#8EC63F",
@@ -415,6 +435,16 @@
       "logoStyle": "color",
       "keywords": [
         "darty"
+      ]
+    },
+    {
+      "id": "de_neuville",
+      "name": "De Neuville",
+      "colorHex": "#D00163",
+      "logoStyle": "white",
+      "keywords": [
+        "de neuville",
+        "chocolatier"
       ]
     },
     {
@@ -1173,6 +1203,16 @@
       ]
     },
     {
+      "id": "proxi",
+      "name": "Proxi",
+      "colorHex": "#801C55",
+      "logoStyle": "color",
+      "keywords": [
+        "proxi",
+        "supermarché de proximité"
+      ]
+    },
+    {
       "id": "pull_bear",
       "name": "PULL&BEAR",
       "colorHex": "#ffffff",
@@ -1323,6 +1363,15 @@
       "logoStyle": "white",
       "keywords": [
         "superdry"
+      ]
+    },
+    {
+      "id": "tape_a_l_oeil",
+      "name": "Tape à l'oeil",
+      "colorHex": "#F0501F",
+      "logoStyle": "white",
+      "keywords": [
+        "tape à l'oeil"
       ]
     },
     {
