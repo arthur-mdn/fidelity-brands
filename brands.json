@@ -1,5 +1,5 @@
 {
-  "version": "1.0.15",
+  "version": "1.0.16",
   "updatedAt": "2026-03-15",
   "brands": [
     {
@@ -812,6 +812,16 @@
       ]
     },
     {
+      "id": "leonidas",
+      "name": "Leonidas",
+      "colorHex": "#08255B",
+      "logoStyle": "white",
+      "keywords": [
+        "leonidas",
+        "chocolatier"
+      ]
+    },
+    {
       "id": "leroy_merlin",
       "name": "Leroy Merlin",
       "colorHex": "#ffffff",
@@ -820,6 +830,17 @@
         "leroy",
         "merlin",
         "leroymerlin"
+      ]
+    },
+    {
+      "id": "levi_s",
+      "name": "Levi's",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "levi's",
+        "levis",
+        "jeans"
       ]
     },
     {
@@ -834,12 +855,13 @@
     {
       "id": "maisons_du_monde",
       "name": "Maisons du Monde",
-      "colorHex": "#1A1A1A",
-      "logoStyle": "color",
+      "colorHex": "#3C3C3B",
+      "logoStyle": "white",
       "keywords": [
         "maisons du monde",
         "mdm"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "mango",
@@ -994,6 +1016,16 @@
       ]
     },
     {
+      "id": "pascal_coste",
+      "name": "Pascal Coste",
+      "colorHex": "#000000",
+      "logoStyle": "white",
+      "keywords": [
+        "pascal coste",
+        "coiffeur"
+      ]
+    },
+    {
       "id": "pathe",
       "name": "Pathé",
       "colorHex": "#FFC426",
@@ -1033,12 +1065,50 @@
       ]
     },
     {
+      "id": "pitaya",
+      "name": "Pitaya",
+      "colorHex": "#000000",
+      "logoStyle": "color",
+      "keywords": [
+        "pitaya",
+        "thaï"
+      ]
+    },
+    {
+      "id": "pokawa",
+      "name": "Pokawa",
+      "colorHex": "#2A2E6F",
+      "logoStyle": "color",
+      "keywords": [
+        "pokawa"
+      ]
+    },
+    {
       "id": "primark",
       "name": "Primark",
       "colorHex": "#079CCE",
       "logoStyle": "white",
       "keywords": [
         "primark"
+      ]
+    },
+    {
+      "id": "promod",
+      "name": "Promod",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "promod"
+      ]
+    },
+    {
+      "id": "pull_bear",
+      "name": "PULL&BEAR",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "pull&bear",
+        "pull and bear"
       ]
     },
     {
@@ -1063,6 +1133,15 @@
       ]
     },
     {
+      "id": "sandro",
+      "name": "SANDRO",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "sandro"
+      ]
+    },
+    {
       "id": "sephora",
       "name": "Séphora",
       "colorHex": "#000000",
@@ -1079,6 +1158,15 @@
       "logoStyle": "color",
       "keywords": [
         "shell"
+      ]
+    },
+    {
+      "id": "snipes",
+      "name": "snipes",
+      "colorHex": "#484B52",
+      "logoStyle": "color",
+      "keywords": [
+        "snipes"
       ]
     },
     {
@@ -1129,6 +1217,15 @@
       ]
     },
     {
+      "id": "stradivarius",
+      "name": "Stradivarius",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "stradivarius"
+      ]
+    },
+    {
       "id": "subway",
       "name": "Subway",
       "colorHex": "#009B48",
@@ -1137,6 +1234,33 @@
         "subway"
       ],
       "logoVersion": "2"
+    },
+    {
+      "id": "superdry",
+      "name": "Superdry",
+      "colorHex": "#FF6101",
+      "logoStyle": "white",
+      "keywords": [
+        "superdry"
+      ]
+    },
+    {
+      "id": "the_kooples",
+      "name": "The Kooples",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "the kooples"
+      ]
+    },
+    {
+      "id": "the_north_face",
+      "name": "The North Face",
+      "colorHex": "#DA2427",
+      "logoStyle": "white",
+      "keywords": [
+        "the north face"
+      ]
     },
     {
       "id": "total_energies",
