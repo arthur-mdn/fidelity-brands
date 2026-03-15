@@ -625,6 +625,16 @@
       ]
     },
     {
+      "id": "huit_a_huit",
+      "name": "8 à Huit",
+      "colorHex": "#B0FE11",
+      "logoStyle": "color",
+      "keywords": [
+        "8 à huit",
+        "huit à huit"
+      ]
+    },
+    {
       "id": "ikea",
       "name": "IKEA",
       "colorHex": "#0058A3",
@@ -811,6 +821,15 @@
       "keywords": [
         "la halle",
         "chaussure"
+      ]
+    },
+    {
+      "id": "la_mie_caline",
+      "name": "La Mie Câline",
+      "colorHex": "#FFD244",
+      "logoStyle": "color",
+      "keywords": [
+        "la mie caline"
       ]
     },
     {
@@ -1213,8 +1232,8 @@
       ]
     },
     {
-      "id": "smyths",
-      "name": "Smyths",
+      "id": "smyths_toys_superstores",
+      "name": "Smyths Toys Superstores",
       "colorHex": "#0287F1",
       "logoStyle": "color",
       "keywords": [
