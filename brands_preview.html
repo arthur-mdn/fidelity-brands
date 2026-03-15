@@ -229,11 +229,9 @@
 
 <script>
     // Charge brands.json :
-    // - Via <input> si l'utilisateur charge le fichier manuellement
     // - Via fetch si on est sur un serveur HTTP
     // - Via données inline en dernier recours
     async function loadBrands() {
-        if (window._loadedData) return window._loadedData;
         try {
             const res = await fetch(`brands.json?v=${Date.now()}`);
             const data = await res.json();
@@ -242,34 +240,6 @@
             return INLINE_DATA;
         }
     }
-
-    // Bouton reload : lit brands.json via FileReader (fonctionne en file://)
-    document.getElementById('reload-btn').addEventListener('click', () => {
-        document.getElementById('file-input').click();
-    });
-
-    document.getElementById('file-input').addEventListener('change', e => {
-        const file = e.target.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = ev => {
-            try {
-                const data = JSON.parse(ev.target.result);
-                window._loadedData = data;
-                allBrands = data.brands;
-                const d = new Date(data.updatedAt);
-                document.getElementById('version-text').textContent =
-                    `v${data.version} · ${d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}`;
-                document.getElementById('search').value = '';
-                render(allBrands);
-            } catch {
-                alert('Fichier JSON invalide');
-            }
-        };
-        reader.readAsText(file);
-        // Reset input pour permettre de recharger le même fichier
-        e.target.value = '';
-    });
 
     function initials(name) {
         return name.replace(/[^a-zA-ZÀ-ÿ0-9&]/g, '').substring(0, 2).toUpperCase();
@@ -283,11 +253,10 @@
     }
 
     function renderCard(brand) {
-        const isColorLogo = brand.logoStyle === 'color';
+        const isWhiteLogo = brand.logoStyle === 'white';
         const bg = brand.colorHex;
         const light = isLight(bg);
         const textColor = light ? 'rgba(0,0,0,0.7)' : 'white';
-        const imgFilter = isColorLogo ? 'none' : (light ? 'brightness(0)' : 'brightness(0) invert(1)');
         const bust = Date.now();
         const logoPath = `logos/${brand.id}.svg?v=${bust}`;
 
@@ -297,7 +266,7 @@
           <img
             src="${logoPath}"
             alt="${brand.name}"
-            style="filter: ${imgFilter}; width:${isColorLogo ? '72px' : '48px'}; height:${isColorLogo ? '72px' : '48px'}"
+            style="width:72px; height:72px; filter:${isWhiteLogo ? 'brightness(0) invert(1)' : 'none'}"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
           >
           <span class="initials" style="display:none; color:${textColor}">${initials(brand.name)}</span>
@@ -331,6 +300,7 @@
             if (el) {
                 el.textContent = exists ? '✓' : '–';
                 el.title = exists ? 'Logo disponible' : 'Logo manquant';
+                el.style.backgroundColor = isLight(brand.colorHex) ? 'rgba(0,0,0,0.25)' : 'rgba(255,255,255,0.25)';
             }
         }
     }
@@ -374,8 +344,8 @@
 
     // Données inline de fallback (ouverture sans serveur HTTP)
     const INLINE_DATA = {
-        "version": "1.0.14",
-        "updatedAt": "2026-03-09",
+        "version": "1.0.15",
+        "updatedAt": "2026-03-15",
         "brands": [
             {
                 "id": "action",
@@ -1161,7 +1131,7 @@
                 "id": "la_halle",
                 "name": "La Halle",
                 "colorHex": "#ffffff",
-                "logoStyle": "white",
+                "logoStyle": "color",
                 "keywords": [
                     "la halle",
                     "chaussure"
@@ -1557,7 +1527,7 @@
                 "id": "undiz",
                 "name": "Undiz",
                 "colorHex": "#ffffff",
-                "logoStyle": "white",
+                "logoStyle": "color",
                 "keywords": [
                     "undiz"
                 ]

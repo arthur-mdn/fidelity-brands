@@ -1,6 +1,6 @@
 {
-  "version": "1.0.14",
-  "updatedAt": "2026-03-09",
+  "version": "1.0.15",
+  "updatedAt": "2026-03-15",
   "brands": [
     {
       "id": "action",
@@ -786,7 +786,7 @@
       "id": "la_halle",
       "name": "La Halle",
       "colorHex": "#ffffff",
-      "logoStyle": "white",
+      "logoStyle": "color",
       "keywords": [
         "la halle",
         "chaussure"
@@ -1182,7 +1182,7 @@
       "id": "undiz",
       "name": "Undiz",
       "colorHex": "#ffffff",
-      "logoStyle": "white",
+      "logoStyle": "color",
       "keywords": [
         "undiz"
       ]
