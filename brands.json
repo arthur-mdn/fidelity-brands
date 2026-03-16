@@ -1,5 +1,5 @@
 {
-  "version": "1.0.21",
+  "version": "1.0.22",
   "updatedAt": "2026-03-16",
   "brands": [
     {
@@ -114,6 +114,15 @@
       ]
     },
     {
+      "id": "aroma_zone",
+      "name": "Aroma Zone",
+      "colorHex": "#F7E6D2",
+      "logoStyle": "color",
+      "keywords": [
+        "aroma zone"
+      ]
+    },
+    {
       "id": "auchan",
       "name": "Auchan",
       "colorHex": "#E31A20",
@@ -148,6 +157,16 @@
       "logoStyle": "white",
       "keywords": [
         "bershka"
+      ]
+    },
+    {
+      "id": "besson",
+      "name": "Besson",
+      "colorHex": "#E7464B",
+      "logoStyle": "white",
+      "keywords": [
+        "besson",
+        "besson chaussures"
       ]
     },
     {
@@ -552,6 +571,15 @@
       ]
     },
     {
+      "id": "desigual",
+      "name": "Desigual",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "desigual"
+      ]
+    },
+    {
       "id": "devred",
       "name": "Devred",
       "colorHex": "#4E4F52",
@@ -674,6 +702,15 @@
       ]
     },
     {
+      "id": "gamm_vert",
+      "name": "Gamm vert",
+      "colorHex": "#00664A",
+      "logoStyle": "white",
+      "keywords": [
+        "gamm vert"
+      ]
+    },
+    {
       "id": "gemo",
       "name": "Gémo",
       "colorHex": "#ffffff",
@@ -754,6 +791,17 @@
       "logoStyle": "white",
       "keywords": [
         "hema"
+      ]
+    },
+    {
+      "id": "hippopotamus",
+      "name": "Hippopotamus",
+      "colorHex": "#A61615",
+      "logoStyle": "white",
+      "keywords": [
+        "hippopotamus",
+        "steakhouse",
+        "1968"
       ]
     },
     {
@@ -1054,6 +1102,17 @@
       ]
     },
     {
+      "id": "maison_nicolas",
+      "name": "Maison Nicolas",
+      "colorHex": "#952A2E",
+      "logoStyle": "white",
+      "keywords": [
+        "maison nicolas",
+        "maisonnicolas",
+        "cave à vin"
+      ]
+    },
+    {
       "id": "maisons_du_monde",
       "name": "Maisons du Monde",
       "colorHex": "#3C3C3B",
@@ -1157,6 +1216,16 @@
       ]
     },
     {
+      "id": "nachos",
+      "name": "NACHOS",
+      "colorHex": "#234B40",
+      "logoStyle": "white",
+      "keywords": [
+        "nachos",
+        "mexican good food"
+      ]
+    },
+    {
       "id": "naturalia",
       "name": "Naturalia",
       "colorHex": "#BD2918",
@@ -1226,6 +1295,16 @@
       ]
     },
     {
+      "id": "okaidi",
+      "name": "Okaïdi",
+      "colorHex": "#022169",
+      "logoStyle": "white",
+      "keywords": [
+        "okaidi",
+        "okaïdi"
+      ]
+    },
+    {
       "id": "optical_center",
       "name": "Optical Center",
       "colorHex": "#ffffff",
@@ -1234,6 +1313,17 @@
         "optical center",
         "opticalcenter",
         "optique"
+      ]
+    },
+    {
+      "id": "orchestra",
+      "name": "Orchestra",
+      "colorHex": "#E32638",
+      "logoStyle": "white",
+      "keywords": [
+        "orchestra",
+        "orchestra-prémaman",
+        "prémaman"
       ]
     },
     {
@@ -1312,6 +1402,15 @@
       "keywords": [
         "paul",
         "boulangerie"
+      ]
+    },
+    {
+      "id": "petit_bateau",
+      "name": "Petit Bateau",
+      "colorHex": "#15284B",
+      "logoStyle": "white",
+      "keywords": [
+        "petit bateau"
       ]
     },
     {
@@ -1418,6 +1517,15 @@
         "perfumerie",
         "parfumerie",
         "cosmétiques"
+      ]
+    },
+    {
+      "id": "rougegorge",
+      "name": "Rougegorge",
+      "colorHex": "#ffffff",
+      "logoStyle": "color",
+      "keywords": [
+        "rougegorge"
       ]
     },
     {
@@ -1634,6 +1742,15 @@
       "logoStyle": "white",
       "keywords": [
         "uniqlo"
+      ]
+    },
+    {
+      "id": "vertbaudet",
+      "name": "Vertbaudet",
+      "colorHex": "#AFCA0B",
+      "logoStyle": "white",
+      "keywords": [
+        "verbaudet"
       ]
     },
     {
