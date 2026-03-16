@@ -1,15 +1,16 @@
 {
-  "version": "1.0.23",
+  "version": "1.0.24",
   "updatedAt": "2026-03-16",
   "brands": [
     {
       "id": "action",
       "name": "Action",
-      "colorHex": "#ffffff",
+      "colorHex": "#195799",
       "logoStyle": "color",
       "keywords": [
         "action"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "adidas",
@@ -50,11 +51,12 @@
     {
       "id": "amazon",
       "name": "Amazon",
-      "colorHex": "#ffffff",
+      "colorHex": "#161D29",
       "logoStyle": "color",
       "keywords": [
         "amazon"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "ange",
@@ -134,7 +136,7 @@
     {
       "id": "b_m",
       "name": "b&m",
-      "colorHex": "#ffffff",
+      "colorHex": "#F78F1F",
       "logoStyle": "color",
       "keywords": [
         "b&m",
@@ -201,8 +203,8 @@
     {
       "id": "bonobo",
       "name": "Bonobo",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#E2723B",
+      "logoStyle": "white",
       "keywords": [
         "bonobo"
       ]
@@ -228,8 +230,8 @@
     {
       "id": "brice",
       "name": "Brice",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#000000",
+      "logoStyle": "white",
       "keywords": [
         "brice"
       ]
@@ -237,7 +239,7 @@
     {
       "id": "brico_depot",
       "name": "Brico Dépôt",
-      "colorHex": "#ffffff",
+      "colorHex": "#E10712",
       "logoStyle": "color",
       "keywords": [
         "brico",
@@ -249,29 +251,31 @@
     {
       "id": "brico_marche",
       "name": "Brico Marché",
-      "colorHex": "#ffffff",
+      "colorHex": "#372124",
       "logoStyle": "color",
       "keywords": [
         "brico",
         "marché",
         "marche",
         "bricomarche"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "bricorama",
       "name": "Bricorama",
-      "colorHex": "#ffffff",
+      "colorHex": "#FFD300",
       "logoStyle": "color",
       "keywords": [
         "bricolage",
         "rama"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "brioche_doree",
       "name": "Brioche Dorée",
-      "colorHex": "#ffffff",
+      "colorHex": "#B54E3E",
       "logoStyle": "color",
       "keywords": [
         "brioche dorée",
@@ -294,7 +298,7 @@
     {
       "id": "bureau_vallee",
       "name": "Bureau Vallée",
-      "colorHex": "#ffffff",
+      "colorHex": "#1E3C76",
       "logoStyle": "color",
       "keywords": [
         "bureau vallée"
@@ -303,7 +307,7 @@
     {
       "id": "burger_king",
       "name": "Burger King",
-      "colorHex": "#ffffff",
+      "colorHex": "#F6EBDD",
       "logoStyle": "color",
       "keywords": [
         "burger king",
@@ -333,8 +337,8 @@
     {
       "id": "bzb",
       "name": "BZB",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#1D1D1B",
+      "logoStyle": "white",
       "keywords": [
         "bzb",
         "Bizbee"
@@ -352,7 +356,7 @@
     {
       "id": "cache_cache",
       "name": "Cache Cache",
-      "colorHex": "#ffffff",
+      "colorHex": "#FCF0DF",
       "logoStyle": "color",
       "keywords": [
         "cache cache"
@@ -499,11 +503,12 @@
     {
       "id": "columbus",
       "name": "Columbus",
-      "colorHex": "#ffffff",
+      "colorHex": "#FAB001",
       "logoStyle": "color",
       "keywords": [
         "Columbus café"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "conforama",
@@ -544,11 +549,12 @@
     {
       "id": "darty",
       "name": "Darty",
-      "colorHex": "#ffffff",
+      "colorHex": "#E30613",
       "logoStyle": "color",
       "keywords": [
         "darty"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "de_neuville",
@@ -573,8 +579,8 @@
     {
       "id": "desigual",
       "name": "Desigual",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#F9E13E",
+      "logoStyle": "white",
       "keywords": [
         "desigual"
       ]
@@ -591,12 +597,13 @@
     {
       "id": "dominos",
       "name": "Domino's",
-      "colorHex": "#ffffff",
+      "colorHex": "#006493",
       "logoStyle": "color",
       "keywords": [
         "dominos",
         "domino"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "e_leclerc",
@@ -621,11 +628,12 @@
     {
       "id": "eden_park",
       "name": "Eden Park",
-      "colorHex": "#ffffff",
+      "colorHex": "#000023",
       "logoStyle": "color",
       "keywords": [
         "eden park"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "electro_depot",
@@ -639,18 +647,19 @@
     },
     {
       "id": "eram",
-      "name": "Eram",
-      "colorHex": "#ffffff",
+      "name": "éram",
+      "colorHex": "#201F1F",
       "logoStyle": "color",
       "keywords": [
         "eram"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "etam",
       "name": "Etam",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#000000",
+      "logoStyle": "white",
       "keywords": [
         "etam"
       ]
@@ -679,8 +688,7 @@
       "colorHex": "#ECB300",
       "logoStyle": "white",
       "keywords": [
-        "fnac",
-        "darty"
+        "fnac"
       ]
     },
     {
@@ -767,12 +775,13 @@
     {
       "id": "grand_optical",
       "name": "Grand Optical",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#252525",
+      "logoStyle": "white",
       "keywords": [
         "grand optical",
         "optique"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "guess",
@@ -888,11 +897,12 @@
     {
       "id": "jd_sports",
       "name": "JD Sports",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#000000",
+      "logoStyle": "white",
       "keywords": [
         "jd sports"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "jean_louis_david",
@@ -956,7 +966,7 @@
     {
       "id": "kfc",
       "name": "KFC",
-      "colorHex": "#E8192C",
+      "colorHex": "#A3080C",
       "logoStyle": "color",
       "keywords": [
         "kfc",
@@ -984,11 +994,12 @@
     {
       "id": "king_jouet",
       "name": "King Jouet",
-      "colorHex": "#ffffff",
+      "colorHex": "#153D3C",
       "logoStyle": "color",
       "keywords": [
         "king jouet"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "krys",
@@ -1094,13 +1105,14 @@
     {
       "id": "levi_s",
       "name": "Levi's",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#C5092C",
+      "logoStyle": "white",
       "keywords": [
         "levi's",
         "levis",
         "jeans"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "lidl",
@@ -1209,8 +1221,8 @@
     {
       "id": "monoprix",
       "name": "Monoprix",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#E30613",
+      "logoStyle": "white",
       "keywords": [
         "monoprix"
       ]
@@ -1262,7 +1274,8 @@
       "logoStyle": "white",
       "keywords": [
         "nespresso"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "netto",
@@ -1350,7 +1363,7 @@
       "id": "oxbow",
       "name": "Oxbow",
       "colorHex": "#7A4E90",
-      "logoStyle": "color",
+      "logoStyle": "white",
       "keywords": [
         "oxbow"
       ]
@@ -1482,8 +1495,8 @@
     {
       "id": "promod",
       "name": "Promod",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#000000",
+      "logoStyle": "white",
       "keywords": [
         "promod"
       ]
@@ -1501,8 +1514,8 @@
     {
       "id": "pull_bear",
       "name": "PULL&BEAR",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#000000",
+      "logoStyle": "white",
       "keywords": [
         "pull&bear",
         "pull and bear"
@@ -1511,7 +1524,7 @@
     {
       "id": "quick",
       "name": "Quick",
-      "colorHex": "#ffffff",
+      "colorHex": "#D30127",
       "logoStyle": "color",
       "keywords": [
         "quick"
@@ -1529,14 +1542,15 @@
     {
       "id": "rituals",
       "name": "Rituals",
-      "colorHex": "#ffffff",
+      "colorHex": "#080606",
       "logoStyle": "color",
       "keywords": [
         "rituals",
         "perfumerie",
         "parfumerie",
         "cosmétiques"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "rougegorge",
@@ -1607,11 +1621,12 @@
     {
       "id": "spar",
       "name": "Spar",
-      "colorHex": "#ffffff",
+      "colorHex": "#EC151F",
       "logoStyle": "color",
       "keywords": [
         "spar"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "sport_2000",
@@ -1635,7 +1650,7 @@
     {
       "id": "stokomani",
       "name": "Stokomani",
-      "colorHex": "#ffffff",
+      "colorHex": "#FFD217",
       "logoStyle": "color",
       "keywords": [
         "stokomani"
@@ -1681,8 +1696,8 @@
     {
       "id": "the_kooples",
       "name": "The Kooples",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#000000",
+      "logoStyle": "white",
       "keywords": [
         "the kooples"
       ]
@@ -1703,7 +1718,8 @@
       "logoStyle": "color",
       "keywords": [
         "top office"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "total_energies",
@@ -1748,8 +1764,8 @@
     {
       "id": "undiz",
       "name": "Undiz",
-      "colorHex": "#ffffff",
-      "logoStyle": "color",
+      "colorHex": "#000000",
+      "logoStyle": "white",
       "keywords": [
         "undiz"
       ]
