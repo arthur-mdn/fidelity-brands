@@ -193,6 +193,16 @@
       ]
     },
     {
+      "id": "biocoop",
+      "name": "Biocoop",
+      "colorHex": "#0032A0",
+      "logoStyle": "color",
+      "keywords": [
+        "biocoop",
+        "bio"
+      ]
+    },
+    {
       "id": "bleu_libellule",
       "name": "Bleu libellule",
       "colorHex": "#EA647F",
@@ -332,16 +342,6 @@
       "logoStyle": "white",
       "keywords": [
         "but"
-      ]
-    },
-    {
-      "id": "biocoop",
-      "name": "Biocoop",
-      "colorHex": "#0032A0",
-      "logoStyle": "color",
-      "keywords": [
-        "biocoop",
-        "bio"
       ]
     },
     {
