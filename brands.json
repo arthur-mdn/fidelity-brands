@@ -1,5 +1,5 @@
 {
-  "version": "1.0.31",
+  "version": "1.0.32",
   "updatedAt": "2026-03-17",
   "brands": [
     {
@@ -179,6 +179,24 @@
       "keywords": [
         "besson",
         "besson chaussures"
+      ]
+    },
+    {
+      "id": "big_fernand",
+      "name": "Big Fernand",
+      "colorHex": "#000",
+      "logoStyle": "white",
+      "keywords": [
+        "big fernand"
+      ]
+    },
+    {
+      "id": "big_mat",
+      "name": "Big Mat",
+      "colorHex": "#fff",
+      "logoStyle": "color",
+      "keywords": [
+        "big mat"
       ]
     },
     {
@@ -521,6 +539,15 @@
       ]
     },
     {
+      "id": "chicken_street",
+      "name": "Chicken Street",
+      "colorHex": "#000",
+      "logoStyle": "color",
+      "keywords": [
+        "chicken street"
+      ]
+    },
+    {
       "id": "choc_viande",
       "name": "Choc Viande",
       "colorHex": "#ffffff",
@@ -615,6 +642,16 @@
       ]
     },
     {
+      "id": "darjeeling",
+      "name": "Darjeeling",
+      "colorHex": "#000",
+      "logoStyle": "white",
+      "keywords": [
+        "darjeeling",
+        "lingerie"
+      ]
+    },
+    {
       "id": "darty",
       "name": "Darty",
       "colorHex": "#E30613",
@@ -669,6 +706,16 @@
       "logoStyle": "color",
       "keywords": [
         "devred"
+      ]
+    },
+    {
+      "id": "dim",
+      "name": "DIM",
+      "colorHex": "#000",
+      "logoStyle": "white",
+      "keywords": [
+        "dim",
+        "lingerie"
       ]
     },
     {
@@ -748,6 +795,16 @@
       "logoStyle": "white",
       "keywords": [
         "feu vert"
+      ]
+    },
+    {
+      "id": "feuillette",
+      "name": "Feuillette",
+      "colorHex": "#B19E6C",
+      "logoStyle": "white",
+      "keywords": [
+        "feuillette",
+        "boulangerie"
       ]
     },
     {
@@ -1129,6 +1186,15 @@
       ]
     },
     {
+      "id": "kusmi_tea",
+      "name": "Kusmi Tea",
+      "colorHex": "#93163B",
+      "logoStyle": "white",
+      "keywords": [
+        "kusmi tea"
+      ]
+    },
+    {
       "id": "l_occitane",
       "name": "L'Occitane",
       "colorHex": "#FBBD1A",
@@ -1288,6 +1354,17 @@
       "logoStyle": "white",
       "keywords": [
         "mango"
+      ]
+    },
+    {
+      "id": "marc_orian",
+      "name": "Marc Orian",
+      "colorHex": "#000000",
+      "logoStyle": "white",
+      "keywords": [
+        "marc orian",
+        "marcorian",
+        "bijouterie"
       ]
     },
     {
@@ -1603,6 +1680,15 @@
       ]
     },
     {
+      "id": "pharmacie_lafayette",
+      "name": "Pharmacie Lafayette",
+      "colorHex": "#73CFA3",
+      "logoStyle": "color",
+      "keywords": [
+        "pharmacie lafayette"
+      ]
+    },
+    {
       "id": "picard",
       "name": "Picard",
       "colorHex": "#ffffff",
@@ -1757,6 +1843,15 @@
       ]
     },
     {
+      "id": "sergent_major",
+      "name": "Sergent Major",
+      "colorHex": "#3B0C3F",
+      "logoStyle": "white",
+      "keywords": [
+        "sergent major"
+      ]
+    },
+    {
       "id": "shell",
       "name": "Shell",
       "colorHex": "#1D232B",
@@ -1867,6 +1962,15 @@
       "logoStyle": "white",
       "keywords": [
         "superdry"
+      ]
+    },
+    {
+      "id": "sushi_shop",
+      "name": "Sushi Shop",
+      "colorHex": "#BBAB94",
+      "logoStyle": "white",
+      "keywords": [
+        "sushi shop"
       ]
     },
     {
