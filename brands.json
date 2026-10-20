@@ -1,5 +1,5 @@
 {
-  "version": "1.0.33",
+  "version": "1.0.34",
   "updatedAt": "2026-10-20",
   "brands": [
     {
@@ -21,7 +21,8 @@
         "adhauc",
         "ad'hauc",
         "ad hauc"
-      ]
+      ],
+      "logoVersion": "2"
     },
     {
       "id": "adidas",
